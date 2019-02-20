@@ -23,6 +23,7 @@ class Connect
     private function getInfo($configurations, $id){
 
         $array = array();
+        
 
         $host = 'host' . $id;
         $port = 'port' . $id;
