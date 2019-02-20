@@ -1,0 +1,54 @@
+<?php
+$xmlstr = <<<XML
+<?xml version='1.0' standalone='yes'?>
+<configurations> 
+ <config>
+  <path>
+  C:/Users/daniil/Desktop/kfu/diplom/project/
+  </path>
+  <host1>
+  localhost
+  </host1>
+  <host2>
+  localhost
+  </host2>
+  <port1>
+  5432
+  </port1>
+  <port2>
+  5432
+  </port2>
+  <dbname1>
+  test1
+  </dbname1>
+  <dbname2>
+  test2
+  </dbname2>
+   <schema1>
+  public
+  </schema1>
+  <schema2>
+  public
+  </schema2>
+  <table1>
+  users
+  </table1>
+  <table2>
+  users
+  </table2>
+  <user1>
+  postgres
+  </user1>
+  <user2>
+  postgres
+  </user2>
+  <password1>
+  postgres
+  </password1>
+  <password2>
+  postgres
+  </password2>
+ </config>
+</configurations>
+XML;
+?>
