@@ -8,5 +8,5 @@
 
 interface Part2ServiceInterface
 {
-
+    public function doIt();
 }

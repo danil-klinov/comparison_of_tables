@@ -20,10 +20,10 @@ class Connect
 
     }
 
+
     private function getInfo($configurations, $id){
 
         $array = array();
-        
 
         $host = 'host' . $id;
         $port = 'port' . $id;
@@ -41,9 +41,13 @@ class Connect
 
     }
 
+
+
+
     public function closeConnectionDB()
     {
         pg_close();
     }
+
 
 }

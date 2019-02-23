@@ -7,16 +7,25 @@
  */
 
 require_once './services/Part1Service.php';
+require_once './services/Part2Service.php';
 
-$part = new Part1Service();
+$part1 = new Part1Service();
 
-if ($part->doIt()){
-    echo 'TRUE';
+$part2 = new Part2Service();
+
+if ($part1->doIt()){
+    echo 'TRUE ';
 }
 else{
-    echo 'FALSE';
+    echo 'FALSE ';
 };
 
+if ($part2->doIt()){
+    echo 'TRUE ';
+}
+else{
+    echo 'FALSE ';
+};
 
 
 
