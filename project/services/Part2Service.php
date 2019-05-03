@@ -6,16 +6,16 @@
  * Time: 18:19
  */
 
-include(__DIR__ . "/../config/config.php");
+include(__DIR__ . "/../config/old_config.php");
 
-require_once 'Part2ServiceInterface.php';
+require_once 'StepInterface.php';
 require_once(__DIR__ . '/../helpers/Connect.php');
 require_once(__DIR__ . '/../helpers/Info.php');
 
-class Part2Service implements Part2ServiceInterface
+class Part2Service implements StepInterface
 {
 
-    public function doIt(){
+    public function Postgres_Postgres(){
 
         global $xmlstr;
 
@@ -60,6 +60,8 @@ class Part2Service implements Part2ServiceInterface
         $row1 = pg_fetch_row(pg_query($connect->connectionDB($configurations, 1), $select1));
         $row2 = pg_fetch_row(pg_query($connect->connectionDB($configurations, 2), $select2));
 
+        //print_r($row1);
+
         $flag = false;
 
         if ($row1 == $row2){
@@ -70,6 +72,16 @@ class Part2Service implements Part2ServiceInterface
 
         return $flag;
 
+    }
+
+    public function Postgres_Oracle()
+    {
+        // TODO: Implement Postgres_Oracle() method.
+    }
+
+    public function Oracle_Oracle()
+    {
+        // TODO: Implement Oracle_Oracle() method.
     }
 
 }

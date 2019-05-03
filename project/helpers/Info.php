@@ -6,7 +6,7 @@
  * Time: 22:22
  */
 
-include(__DIR__ . "/../config/config.php");
+include(__DIR__ . "/../config/old_config.php");
 
 class Info
 {
@@ -54,6 +54,24 @@ class Info
 
     }
 
+    public function getP(){
 
+        $configurations = $this->getCnfigurations();
+
+        (float)$p = trim((string)$configurations->config[0]->p);
+
+        return $p;
+
+    }
+
+    public function getCountOfCheck(){
+
+        $configurations = $this->getCnfigurations();
+
+        (int)$p = trim((string)$configurations->config[0]->countOfCheck);
+
+        return $p;
+
+    }
 
 }
