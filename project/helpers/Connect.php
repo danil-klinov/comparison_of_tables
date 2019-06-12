@@ -21,10 +21,6 @@ class Connect
         $array[4] = trim($array[4]);
         $array[5] = trim($array[5]);
 
-//        echo ($array[5] == "postgresql");
-//        echo '888';
-//        echo $array[5];
-
         if (trim($array[5]) == "postgresql"){
             $db = pg_connect("host=" . $array[0] . " port=" . $array[1] . " dbname=" . $array[2] . " user=" . $array[3] . " password=" . $array[4]);
         }
@@ -61,7 +57,7 @@ class Connect
     public function closeConnectionDB()
     {
         pg_close();
-        //oci_close();
+        oci_close();
     }
 
 

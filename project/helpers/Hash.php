@@ -13,7 +13,6 @@ class Hash
         $hashAll = array();
         $hash = array();
         $hashAll = hash_algos();
-        //print_r($hashAll);
         for ($i = 0; $i < $n; $i++){
             $hash[$i] = $hashAll[$i];
         }

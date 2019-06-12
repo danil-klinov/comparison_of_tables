@@ -1,11 +1,14 @@
 <?php
 $xmlstr = <<<XML
 <?xml version='1.0' standalone='yes'?>
-<configurations> 
+<configurations>
  <config>
-  <path>
-  C:/Users/daniil/Desktop/kfu/diplom/project/
-  </path>
+  <type1>
+  postgresql
+  </type1>
+  <type2>
+  postgresql
+  </type2>
   <host1>
   localhost
   </host1>
@@ -24,7 +27,7 @@ $xmlstr = <<<XML
   <dbname2>
   test2
   </dbname2>
-   <schema1>
+  <schema1>
   public
   </schema1>
   <schema2>
@@ -48,6 +51,12 @@ $xmlstr = <<<XML
   <password2>
   postgres
   </password2>
+  <p>
+  0.001
+  </p>
+  <countOfCheck>
+  10000
+  </countOfCheck>
  </config>
 </configurations>
 XML;
